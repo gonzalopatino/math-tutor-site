@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 
 export default function App() {
   return (
@@ -6,5 +6,5 @@ export default function App() {
       <h1>Math Tutor</h1>
       <p>Professional math tutoring for middle school, high school, and college.</p>
     </main>
-  )
+  );
 }
