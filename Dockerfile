@@ -14,6 +14,9 @@ RUN npm run build
 # Stage 2: Serve the built site with Nginx
 FROM nginx:1.27-alpine
 
+# Use our Nginx config (SPA routing, caching )
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copy the build output from the previous stage
 COPY --from=build /app/dist /usr/share/nginx/html
 
