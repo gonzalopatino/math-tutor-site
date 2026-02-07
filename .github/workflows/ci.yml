@@ -39,3 +39,6 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Docker build
+        run: docker build -t math-tutor-site:ci .
