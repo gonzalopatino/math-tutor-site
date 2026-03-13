@@ -14,13 +14,13 @@ const values = [
   {
     title: 'Personalized Instruction',
     description:
-      'Every student learns differently. I adapt my teaching to match your child\'s pace, learning style, and specific Georgia course requirements.',
+      "Every student learns differently. I adapt my teaching to match your child's pace, learning style, and specific Georgia course requirements.",
   },
 ];
 
 const qualifications = [
-  'Bachelor\'s Degree in Chemical Engineering — Universidad de los Andes, Venezuela',
-  'Master\'s Degree in Education — Universidad de Carabobo',
+  "Bachelor's Degree in Chemical Engineering — Universidad de los Andes, Venezuela",
+  "Master's Degree in Education — Universidad de Carabobo",
   '20+ years of teaching and tutoring experience',
   'Former University Professor — Analytical Mechanics (Physics)',
   '95% exam pass rate at Huntington Learning Center',
@@ -40,13 +40,21 @@ export default function AboutPage() {
                 About <span className="text-accent">Gonzalo Patiño</span>
               </h1>
               <p className="mt-6 text-lg text-neutral-300">
-                With over 20 years of experience in teaching and tutoring, I help Georgia high school students master mathematics and physics. As a former university professor of Analytical Mechanics and experienced tutor, I bring academic depth and practical teaching expertise to every session.
+                With over 20 years of experience in teaching and tutoring, I help Georgia high
+                school students master mathematics and physics. As a former university professor of
+                Analytical Mechanics and experienced tutor, I bring academic depth and practical
+                teaching expertise to every session.
               </p>
               <p className="mt-4 text-lg text-neutral-300">
-                My tutoring is aligned with Georgia's official GSE course pathway — GSE Algebra I, GSE Geometry, GSE Advanced Algebra, GSE Pre-Calculus, and GSE Physics. I understand exactly what Georgia students are learning in class and tailor my sessions to match their coursework.
+                My tutoring is aligned with Georgia's official GSE course pathway — GSE Algebra I,
+                GSE Geometry, GSE Advanced Algebra, GSE Pre-Calculus, and GSE Physics. I understand
+                exactly what Georgia students are learning in class and tailor my sessions to match
+                their coursework.
               </p>
               <p className="mt-4 text-lg text-neutral-300">
-                Based in Bainbridge, Georgia, I offer both online and in-person tutoring for students across the state. My bilingual capabilities (English and Spanish) allow me to reach a wider range of families.
+                Based in Bainbridge, Georgia, I offer both online and in-person tutoring for
+                students across the state. My bilingual capabilities (English and Spanish) allow me
+                to reach a wider range of families.
               </p>
               <div className="mt-8">
                 <Button as="link" to="/booking" size="lg">
@@ -57,20 +65,14 @@ export default function AboutPage() {
             <div className="relative">
               <div className="rounded-2xl bg-primary-800 border border-primary-700/50 p-8">
                 <div className="text-center">
-                  <img 
-                    src="/gonzalo-tutor.png" 
+                  <img
+                    src="/gonzalo-tutor.png"
                     alt="Gonzalo Patiño - Math & Physics Tutor"
                     className="mx-auto max-h-72 w-auto rounded-xl object-contain"
                   />
-                  <p className="mt-6 text-xl font-semibold text-neutral-100">
-                    Gonzalo Patiño
-                  </p>
-                  <p className="text-neutral-300">
-                    High School Math & Physics Tutor
-                  </p>
-                  <p className="text-sm text-accent mt-2">
-                    Bainbridge, Georgia
-                  </p>
+                  <p className="mt-6 text-xl font-semibold text-neutral-100">Gonzalo Patiño</p>
+                  <p className="text-neutral-300">High School Math & Physics Tutor</p>
+                  <p className="text-sm text-accent mt-2">Bainbridge, Georgia</p>
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-accent/20 blur-2xl" />
@@ -89,10 +91,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <ul className="space-y-4">
               {qualifications.map((qualification) => (
-                <li
-                  key={qualification}
-                  className="flex items-start gap-4 text-lg text-neutral-300"
-                >
+                <li key={qualification} className="flex items-start gap-4 text-lg text-neutral-300">
                   <svg
                     className="h-6 w-6 flex-shrink-0 text-accent mt-0.5"
                     fill="none"
@@ -142,7 +141,8 @@ export default function AboutPage() {
             Ready to Help Your Child Succeed?
           </h2>
           <p className="mt-4 text-lg text-neutral-300">
-            Book a free 20-minute assessment to discuss your child's Georgia math or physics course, identify knowledge gaps, and create a personalized tutoring plan.
+            Book a free 20-minute assessment to discuss your child's Georgia math or physics course,
+            identify knowledge gaps, and create a personalized tutoring plan.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button as="link" to="/booking" size="lg">

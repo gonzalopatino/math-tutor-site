@@ -10,9 +10,7 @@ const renderApp = (route = '/') => {
 describe('App', () => {
   it('renders the home page by default', () => {
     renderApp('/');
-    expect(
-      screen.getByRole('heading', { name: /help your child/i })
-    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /help your child/i })).toBeInTheDocument();
   });
 
   it('renders the navbar with brand', () => {
@@ -24,8 +22,6 @@ describe('App', () => {
 
   it('renders the footer', () => {
     renderApp('/');
-    expect(
-      screen.getByText(/gp science tutor\. all rights reserved/i)
-    ).toBeInTheDocument();
+    expect(screen.getByText(/gp science tutor\. all rights reserved/i)).toBeInTheDocument();
   });
 });

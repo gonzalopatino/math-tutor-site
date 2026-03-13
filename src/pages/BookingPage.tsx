@@ -40,7 +40,7 @@ export default function BookingPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -76,9 +76,8 @@ export default function BookingPage() {
             Booking Request Received!
           </h1>
           <p className="mt-4 text-lg text-neutral-300">
-            Thank you for your interest. I'll review your request and send a
-            confirmation email within 24 hours with the session details and
-            meeting link.
+            Thank you for your interest. I'll review your request and send a confirmation email
+            within 24 hours with the session details and meeting link.
           </p>
           <div className="mt-8">
             <Button as="link" to="/" variant="secondary">
@@ -99,8 +98,8 @@ export default function BookingPage() {
             Book a <span className="text-accent">Session</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-300">
-            Schedule tutoring for your Georgia high school math or physics course.
-            Start with a free 20-minute assessment to identify knowledge gaps and create a personalized plan.
+            Schedule tutoring for your Georgia high school math or physics course. Start with a free
+            20-minute assessment to identify knowledge gaps and create a personalized plan.
           </p>
         </div>
       </section>
@@ -217,13 +216,19 @@ export default function BookingPage() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600 text-white flex-shrink-0">
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                    />
                   </svg>
                 </div>
                 <div>
                   <h3 className="font-semibold text-neutral-100">Online Sessions</h3>
                   <p className="mt-1 text-sm text-neutral-300">
-                    Sessions are conducted via Zoom or Google Meet. You'll receive a link after booking confirmation.
+                    Sessions are conducted via Zoom or Google Meet. You'll receive a link after
+                    booking confirmation.
                   </p>
                 </div>
               </div>
@@ -232,7 +237,12 @@ export default function BookingPage() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600 text-white flex-shrink-0">
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                 </div>
                 <div>

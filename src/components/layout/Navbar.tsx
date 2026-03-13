@@ -24,10 +24,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary-900/80 backdrop-blur-md border-b border-primary-700/50">
-      <nav
-        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-        aria-label="Main navigation"
-      >
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link
@@ -44,9 +41,7 @@ export default function Navbar() {
                 key={link.href}
                 to={link.href}
                 className={`text-sm font-medium transition-colors hover:text-accent ${
-                  location.pathname === link.href
-                    ? 'text-accent'
-                    : 'text-neutral-200'
+                  location.pathname === link.href ? 'text-accent' : 'text-neutral-200'
                 }`}
               >
                 {link.label}

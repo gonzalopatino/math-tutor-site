@@ -7,16 +7,13 @@ interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 
 const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function Textarea(
   { label, error, id, className = '', ...props },
-  ref
+  ref,
 ) {
   const textareaId = id || label.toLowerCase().replace(/\s+/g, '-');
 
   return (
     <div className="w-full">
-      <label
-        htmlFor={textareaId}
-        className="block text-sm font-medium text-neutral-200 mb-2"
-      >
+      <label htmlFor={textareaId} className="block text-sm font-medium text-neutral-200 mb-2">
         {label}
         {props.required && <span className="text-error ml-1">*</span>}
       </label>

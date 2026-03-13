@@ -3,27 +3,33 @@ import { SectionHeading, Card, CardTitle, CardDescription, Button } from '../com
 const studyTips = [
   {
     title: 'Practice Regularly',
-    description: 'Consistent practice is more effective than cramming. Aim for 20-30 minutes of focused practice daily.',
+    description:
+      'Consistent practice is more effective than cramming. Aim for 20-30 minutes of focused practice daily.',
   },
   {
     title: 'Work Through Examples',
-    description: 'Before attempting problems, carefully study worked examples. Understand each step before moving on.',
+    description:
+      'Before attempting problems, carefully study worked examples. Understand each step before moving on.',
   },
   {
     title: 'Ask "Why" Questions',
-    description: 'Don\'t just memorize formulas. Ask why they work. Understanding leads to better retention.',
+    description:
+      "Don't just memorize formulas. Ask why they work. Understanding leads to better retention.",
   },
   {
     title: 'Teach Someone Else',
-    description: 'Explaining concepts to others reveals gaps in your understanding and reinforces learning.',
+    description:
+      'Explaining concepts to others reveals gaps in your understanding and reinforces learning.',
   },
   {
     title: 'Review Mistakes',
-    description: 'When you get a problem wrong, don\'t just look at the answer. Understand what went wrong and why.',
+    description:
+      "When you get a problem wrong, don't just look at the answer. Understand what went wrong and why.",
   },
   {
     title: 'Connect Concepts',
-    description: 'Math and physics concepts are related. Look for connections between topics to build deeper understanding.',
+    description:
+      'Math and physics concepts are related. Look for connections between topics to build deeper understanding.',
   },
 ];
 
@@ -39,7 +45,7 @@ const mathResources = [
     url: 'https://www.desmos.com/calculator',
   },
   {
-    title: 'Paul\'s Online Math Notes',
+    title: "Paul's Online Math Notes",
     description: 'Comprehensive notes and examples for algebra, trig, and calculus.',
     url: 'https://tutorial.math.lamar.edu/',
   },
@@ -68,7 +74,7 @@ const examTips = [
   'Show your work – partial credit matters',
   'Check units in physics problems',
   'Double-check calculations',
-  'Manage your time – don\'t get stuck on one problem',
+  "Manage your time – don't get stuck on one problem",
   'Review your answers if time permits',
 ];
 
@@ -82,8 +88,8 @@ export default function ResourcesPage() {
             Learning <span className="text-accent">Resources</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-300">
-            Study tips, helpful tools, and recommended resources to supplement
-            your tutoring sessions and support your learning.
+            Study tips, helpful tools, and recommended resources to supplement your tutoring
+            sessions and support your learning.
           </p>
         </div>
       </section>
@@ -126,9 +132,7 @@ export default function ResourcesPage() {
                     <CardTitle as="h4" className="mb-1">
                       {resource.title}
                     </CardTitle>
-                    <CardDescription className="mb-3">
-                      {resource.description}
-                    </CardDescription>
+                    <CardDescription className="mb-3">{resource.description}</CardDescription>
                     <a
                       href={resource.url}
                       target="_blank"
@@ -164,9 +168,7 @@ export default function ResourcesPage() {
                     <CardTitle as="h4" className="mb-1">
                       {resource.title}
                     </CardTitle>
-                    <CardDescription className="mb-3">
-                      {resource.description}
-                    </CardDescription>
+                    <CardDescription className="mb-3">{resource.description}</CardDescription>
                     <a
                       href={resource.url}
                       target="_blank"
@@ -205,9 +207,7 @@ export default function ResourcesPage() {
           />
           <div className="max-w-3xl mx-auto">
             <Card hover={false} className="p-8">
-              <h3 className="text-xl font-semibold text-neutral-100 mb-6">
-                Test Day Tips
-              </h3>
+              <h3 className="text-xl font-semibold text-neutral-100 mb-6">Test Day Tips</h3>
               <ul className="space-y-4">
                 {examTips.map((tip, index) => (
                   <li key={index} className="flex items-start gap-4">
@@ -226,11 +226,10 @@ export default function ResourcesPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary-600">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Need Personalized Help?
-          </h2>
+          <h2 className="text-3xl font-bold text-white sm:text-4xl">Need Personalized Help?</h2>
           <p className="mt-4 text-lg text-neutral-200">
-            Resources are great, but nothing beats one-on-one tutoring tailored to your specific needs.
+            Resources are great, but nothing beats one-on-one tutoring tailored to your specific
+            needs.
           </p>
           <div className="mt-8">
             <Button

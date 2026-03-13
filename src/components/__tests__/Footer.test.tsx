@@ -6,7 +6,7 @@ const renderFooter = () => {
   return render(
     <MemoryRouter>
       <Footer />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 };
 
@@ -39,8 +39,6 @@ describe('Footer', () => {
 
   it('renders copyright notice', () => {
     renderFooter();
-    expect(
-      screen.getByText(/gp science tutor\. all rights reserved/i)
-    ).toBeInTheDocument();
+    expect(screen.getByText(/gp science tutor\. all rights reserved/i)).toBeInTheDocument();
   });
 });

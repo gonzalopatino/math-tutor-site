@@ -7,7 +7,7 @@ const renderNavbar = () => {
   return render(
     <MemoryRouter>
       <Navbar />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 };
 
@@ -22,7 +22,7 @@ describe('Navbar', () => {
     // Get desktop nav links (hidden on mobile)
     const nav = screen.getByRole('navigation', { name: /main navigation/i });
     const links = within(nav).getAllByRole('link');
-    
+
     // Should have brand + nav links + CTA
     expect(links.length).toBeGreaterThanOrEqual(5);
   });
@@ -36,13 +36,13 @@ describe('Navbar', () => {
   it('toggles mobile menu on button click', async () => {
     const user = userEvent.setup();
     renderNavbar();
-    
+
     const menuButton = screen.getByRole('button', { name: /open menu/i });
     expect(menuButton).toHaveAttribute('aria-expanded', 'false');
-    
+
     await user.click(menuButton);
     expect(menuButton).toHaveAttribute('aria-expanded', 'true');
-    
+
     await user.click(menuButton);
     expect(menuButton).toHaveAttribute('aria-expanded', 'false');
   });
@@ -50,13 +50,13 @@ describe('Navbar', () => {
   it('toggles mobile menu with keyboard', async () => {
     const user = userEvent.setup();
     renderNavbar();
-    
+
     const menuButton = screen.getByRole('button', { name: /open menu/i });
     menuButton.focus();
-    
+
     await user.keyboard('{Enter}');
     expect(menuButton).toHaveAttribute('aria-expanded', 'true');
-    
+
     await user.keyboard(' ');
     expect(menuButton).toHaveAttribute('aria-expanded', 'false');
   });

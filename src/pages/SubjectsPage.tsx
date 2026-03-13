@@ -5,29 +5,52 @@ const mathTopics = [
   {
     title: 'GSE Algebra I: Concepts and Connections',
     courseId: '27.09900',
-    description: 'Georgia\'s foundational high school math course focusing on linear relationships, equations, and functions.',
-    topics: ['Linear equations & inequalities', 'Systems of equations', 'Functions & relationships', 'Graphing & data analysis'],
+    description:
+      "Georgia's foundational high school math course focusing on linear relationships, equations, and functions.",
+    topics: [
+      'Linear equations & inequalities',
+      'Systems of equations',
+      'Functions & relationships',
+      'Graphing & data analysis',
+    ],
     grades: 'Grade 9',
   },
   {
     title: 'GSE Geometry: Concepts and Connections',
     courseId: '27.09700',
-    description: 'Spatial reasoning, geometric proofs, and measurement aligned with Georgia Standards of Excellence.',
-    topics: ['Congruence & similarity', 'Geometric proofs', 'Circles & area/volume', 'Coordinate geometry'],
+    description:
+      'Spatial reasoning, geometric proofs, and measurement aligned with Georgia Standards of Excellence.',
+    topics: [
+      'Congruence & similarity',
+      'Geometric proofs',
+      'Circles & area/volume',
+      'Coordinate geometry',
+    ],
     grades: 'Grade 10',
   },
   {
     title: 'GSE Advanced Algebra: Concepts and Connections',
     courseId: '27.09770',
-    description: 'Higher-level algebraic concepts preparing students for Pre-Calculus and college mathematics.',
-    topics: ['Polynomial functions', 'Exponentials & logarithms', 'Trigonometry basics', 'Sequences & series'],
+    description:
+      'Higher-level algebraic concepts preparing students for Pre-Calculus and college mathematics.',
+    topics: [
+      'Polynomial functions',
+      'Exponentials & logarithms',
+      'Trigonometry basics',
+      'Sequences & series',
+    ],
     grades: 'Grade 11',
   },
   {
     title: 'GSE Pre-Calculus',
     courseId: '27.09720',
     description: 'Advanced preparation for calculus and college-level mathematics.',
-    topics: ['Advanced functions', 'Trigonometric identities', 'Limits introduction', 'Conic sections'],
+    topics: [
+      'Advanced functions',
+      'Trigonometric identities',
+      'Limits introduction',
+      'Conic sections',
+    ],
     grades: 'Grade 11-12',
   },
 ];
@@ -37,7 +60,7 @@ const physicsTopics = [
   {
     title: 'Forces and Motion',
     description: 'Mechanics fundamentals aligned with GSE Physics standards (SP1-SP3).',
-    topics: ['Kinematics', 'Newton\'s Laws', 'Projectile motion', 'Momentum & collisions'],
+    topics: ['Kinematics', "Newton's Laws", 'Projectile motion', 'Momentum & collisions'],
   },
   {
     title: 'Energy',
@@ -52,7 +75,7 @@ const physicsTopics = [
   {
     title: 'Electricity and Magnetism',
     description: 'Electric circuits and fields per GSE Physics standards (SP6).',
-    topics: ['Electric circuits', 'Ohm\'s Law', 'Magnetic fields', 'Electromagnetism basics'],
+    topics: ['Electric circuits', "Ohm's Law", 'Magnetic fields', 'Electromagnetism basics'],
   },
 ];
 
@@ -66,8 +89,9 @@ export default function SubjectsPage() {
             Georgia High School <span className="text-accent">Math & Physics</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-300">
-            Tutoring aligned with Georgia's high school curriculum and the Georgia Standards of Excellence.
-            Support for Grades 9-12 covering homework, tests, quizzes, and EOC exam preparation.
+            Tutoring aligned with Georgia's high school curriculum and the Georgia Standards of
+            Excellence. Support for Grades 9-12 covering homework, tests, quizzes, and EOC exam
+            preparation.
           </p>
         </div>
       </section>
@@ -94,9 +118,7 @@ export default function SubjectsPage() {
                     {subject.grades}
                   </span>
                 </div>
-                <CardDescription className="mb-4">
-                  {subject.description}
-                </CardDescription>
+                <CardDescription className="mb-4">{subject.description}</CardDescription>
                 <div className="space-y-2">
                   <p className="text-sm font-medium text-neutral-200">Topics covered:</p>
                   <ul className="grid grid-cols-2 gap-2">
@@ -130,26 +152,66 @@ export default function SubjectsPage() {
             </h3>
             <ul className="space-y-3 text-neutral-300">
               <li className="flex items-start gap-3">
-                <svg className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-5 w-5 text-accent flex-shrink-0 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 Homework help aligned with your child's Georgia math class
               </li>
               <li className="flex items-start gap-3">
-                <svg className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-5 w-5 text-accent flex-shrink-0 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 Quiz and test preparation with practice problems
               </li>
               <li className="flex items-start gap-3">
-                <svg className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-5 w-5 text-accent flex-shrink-0 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 Concept mastery through step-by-step problem solving
               </li>
               <li className="flex items-start gap-3">
-                <svg className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="h-5 w-5 text-accent flex-shrink-0 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 SAT/ACT math section preparation (optional)
               </li>
@@ -172,9 +234,7 @@ export default function SubjectsPage() {
                 <CardTitle as="h3" className="text-xl mb-2">
                   {subject.title}
                 </CardTitle>
-                <CardDescription className="mb-4">
-                  {subject.description}
-                </CardDescription>
+                <CardDescription className="mb-4">{subject.description}</CardDescription>
                 <div className="space-y-2">
                   <p className="text-sm font-medium text-neutral-200">Topics covered:</p>
                   <ul className="grid grid-cols-2 gap-2">
@@ -222,7 +282,8 @@ export default function SubjectsPage() {
               <div>
                 <h4 className="font-medium text-accent mb-2">Homework & Test Help</h4>
                 <p className="text-neutral-300">
-                  Support for assignments, quizzes, and exam preparation aligned with class material.
+                  Support for assignments, quizzes, and exam preparation aligned with class
+                  material.
                 </p>
               </div>
               <div>
@@ -243,7 +304,8 @@ export default function SubjectsPage() {
             Ready to Improve Your Child's Grades?
           </h2>
           <p className="mt-4 text-lg text-neutral-200">
-            Book a free 20-minute assessment to discuss your child's Georgia math or physics course, identify knowledge gaps, and create a personalized tutoring plan.
+            Book a free 20-minute assessment to discuss your child's Georgia math or physics course,
+            identify knowledge gaps, and create a personalized tutoring plan.
           </p>
           <div className="mt-8">
             <Button

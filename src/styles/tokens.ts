@@ -16,7 +16,7 @@ export const tokens = {
       300: '#64748b', // Slate gray
     },
     success: '#10b981', // Emerald
-    error: '#ef4444',   // Red
+    error: '#ef4444', // Red
   },
   spacing: {
     1: '4px',

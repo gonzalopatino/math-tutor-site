@@ -58,9 +58,7 @@ export default function Accordion({ items, allowMultiple = false }: AccordionPro
               aria-expanded={isOpen}
               aria-controls={panelId}
             >
-              <span className="text-base font-medium text-neutral-100 pr-4">
-                {item.question}
-              </span>
+              <span className="text-base font-medium text-neutral-100 pr-4">{item.question}</span>
               <svg
                 className={`h-5 w-5 flex-shrink-0 text-accent transition-transform duration-200 ${
                   isOpen ? 'rotate-180' : ''

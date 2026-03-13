@@ -14,16 +14,13 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 
 const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select(
   { label, options, error, id, placeholder = 'Select an option', className = '', ...props },
-  ref
+  ref,
 ) {
   const selectId = id || label.toLowerCase().replace(/\s+/g, '-');
 
   return (
     <div className="w-full">
-      <label
-        htmlFor={selectId}
-        className="block text-sm font-medium text-neutral-200 mb-2"
-      >
+      <label htmlFor={selectId} className="block text-sm font-medium text-neutral-200 mb-2">
         {label}
         {props.required && <span className="text-error ml-1">*</span>}
       </label>
