@@ -13,7 +13,7 @@ const renderHomePage = () => {
 describe('HomePage', () => {
   it('renders the hero headline', () => {
     renderHomePage();
-    expect(screen.getByRole('heading', { name: /help your child/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /math.*physics.*tutoring/i })).toBeInTheDocument();
   });
 
   it('renders CTA buttons', () => {
@@ -29,14 +29,14 @@ describe('HomePage', () => {
     expect(
       screen.getByRole('heading', { name: /common challenges i help solve/i }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/falling behind in class/i)).toBeInTheDocument();
+    expect(screen.getByText(/struggling in algebra or geometry class/i)).toBeInTheDocument();
   });
 
   it('renders subjects section', () => {
     renderHomePage();
-    expect(screen.getByRole('heading', { name: /subjects offered/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /what i tutor/i })).toBeInTheDocument();
     // Check for the subject card titles
-    expect(screen.getByRole('heading', { name: /^mathematics$/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /georgia math courses/i })).toBeInTheDocument();
   });
 
   it('renders testimonials section', () => {
